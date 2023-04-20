@@ -5,7 +5,7 @@ export default function Document() {
         <Html className="h-full antialiased scroll-smooth" lang="en">
             <Head />
 
-            <body className="flex h-full flex-col bg-[#576ACA] text-zinc-200">
+            <body className="flex h-full flex-col bg-[#100828] text-zinc-200">
                 <Main />
                 <NextScript />
             </body>

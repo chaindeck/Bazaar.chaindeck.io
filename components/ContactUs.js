@@ -11,13 +11,19 @@ export default function ContactUs() {
 
     return (
         <div
-            className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 space-y-12 pb-12 md:pb-16 lg:pb-24 bg-[#333]"
+            className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 space-y-12 pb-12 md:pb-16 lg:pb-24"
             id="contact"
         >
-            <div className="space-y-8">
+            <div className="max-w-3xl mx-auto space-y-8">
+                <h5 className="text-center text-xl">Get in Touch</h5>
                 <h3 className="mx-auto text-center text-5xl font-bold">
                     Contact Us
                 </h3>
+                <p className="text-lg text-center">
+                    If you have any questions about our service, want to team up
+                    or leave feedback, send us a message and we will get back to
+                    you shortly.
+                </p>
             </div>
 
             {success && (
@@ -35,7 +41,7 @@ export default function ContactUs() {
             )}
 
             <form
-                className="max-w-lg mx-auto"
+                className="max-w-3xl mx-auto"
                 name="contact"
                 method="POST"
                 action="/?success=true"
@@ -47,8 +53,8 @@ export default function ContactUs() {
                     <input name="bot-field" />
                 </div>
 
-                <div className="max-w-md mx-auto space-y-4">
-                    <div className="">
+                <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 max-w-2xl mx-auto">
+                    <div className="sm:col-span-3">
                         <label
                             htmlFor="name"
                             className="block font-medium text-zinc-300"
@@ -67,7 +73,7 @@ export default function ContactUs() {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="sm:col-span-3">
                         <label
                             htmlFor="email"
                             className="block font-medium text-zinc-300"
@@ -86,7 +92,7 @@ export default function ContactUs() {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="col-span-full">
                         <label
                             htmlFor="message"
                             className="block font-medium text-zinc-300"

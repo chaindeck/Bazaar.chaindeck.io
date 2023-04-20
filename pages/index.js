@@ -3,14 +3,8 @@ import ContactUs from "@/components/ContactUs";
 import HeroNext from "@/components/HeroNext";
 import LiveList from "@/components/LiveList";
 import Layout from "@/components/layouts/Layout";
-import Footer from "@/components/shared/Footer";
-import { useState } from "react";
-import ContactUsModal from "@/components/ContactUsModal";
 
 export default function Home() {
-    const [showModal, setShowModal] = useState(false);
-    const [modalOn, setModalOn] = useState(false);
-
     return (
         <div>
             <Head>
@@ -32,7 +26,7 @@ export default function Home() {
                         <HeroNext />
                     </div>
 
-                    <div className="bg-gradient-to-b from-[#576ACA] py-16">
+                    <div className="bg-gradient-to-b from-[#100828] to-[#151C38] py-16">
                         <h1 className="text-center text-5xl font font-semibold mb-8">
                             Banyan Bazaar
                         </h1>
@@ -58,36 +52,19 @@ export default function Home() {
                             <div className="text-center">
                                 <button
                                     type="button"
-                                    onClick={() => setModalOn(true)}
                                     className="rounded-full bg-[#8763DE] my-4 px-6 py-2 font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                    Get Started
+                                    <a href="#contact">Get Started</a>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="bg-gradient-to-b from-[#151C38] to-[#5B2468]"
-                        style={{
-                            backgroundImage: `url('/assets/bg/wave-4.svg')`,
-                            backgroundRepeat: "no-repeat",
-                            backgroundSize: "cover",
-                        }}
-                    >
+                    <div className="bg-gradient-to-b from-[#151C38] to-[#5B2468]">
                         <LiveList />
-                        <div className="text-center">
-                            <button
-                                type="button"
-                                onClick={() => setModalOn(true)}
-                                className="rounded-full bg-[#8763DE] my-4 px-6 py-2 font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Contact Us
-                            </button>
-                        </div>
-                        <Footer />
                     </div>
-
-                    {modalOn && <ContactUsModal setModalOn={setModalOn} />}
+                    <div className="bg-gradient-to-b from-[#5B2468] to-[#083344] pt-8">
+                        <ContactUs />
+                    </div>
                 </div>
             </Layout>
         </div>
