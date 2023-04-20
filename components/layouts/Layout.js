@@ -10,7 +10,7 @@ export default function Layout({ children, authPage = false }) {
                 </div>
             )}
             {children}
-            {!authPage && <Footer />}
+            {/* {!authPage && <Footer />} */}
         </>
     );
 }

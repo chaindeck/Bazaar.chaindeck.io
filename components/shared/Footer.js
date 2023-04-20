@@ -106,7 +106,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div> */}
-            <div className="bg-[#2A0D30]">
+            <div className="bg-[#110D2C]">
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-center">
                     <div>
                         <p>Copyright &copy; 2023 CHAINDECK</p>
