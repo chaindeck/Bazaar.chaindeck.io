@@ -68,7 +68,7 @@ export default function Home() {
                         className="bg-gradient-to-b from-[#151C38] to-[#5B2468]"
                         style={{
                             // background: `linear-gradient(to bottom, #441960, #441960)`,
-                            backgroundImage: `url('/assets/bg/wave-7.svg')`,
+                            backgroundImage: `url('/assets/bg/wave-8.svg')`,
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover",
                         }}
