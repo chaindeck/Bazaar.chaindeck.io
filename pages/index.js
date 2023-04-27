@@ -1,10 +1,10 @@
+import { useState } from "react";
 import Head from "next/head";
-import HeroNext from "@/components/HeroNext";
 import LiveList from "@/components/LiveList";
 import Layout from "@/components/layouts/Layout";
 import Footer from "@/components/shared/Footer";
-import { useState } from "react";
 import ContactUsModal from "@/components/ContactUsModal";
+import Hero from "@/components/Hero";
 
 export default function Home() {
     const [modalOn, setModalOn] = useState(false);
@@ -27,7 +27,7 @@ export default function Home() {
                             overflow: "hidden",
                         }}
                     >
-                        <HeroNext />
+                        <Hero />
                     </div>
 
                     <div className="bg-gradient-to-b from-[#110D2C] to-[#441960] py-16">
@@ -67,7 +67,6 @@ export default function Home() {
                     <div
                         className="bg-gradient-to-b from-[#151C38] to-[#5B2468]"
                         style={{
-                            // background: `linear-gradient(to bottom, #441960, #441960)`,
                             backgroundImage: `url('/assets/bg/wave-8.svg')`,
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover",
@@ -75,17 +74,6 @@ export default function Home() {
                     >
                         <LiveList />
                     </div>
-                    {/* <div>
-                        <div className="text-center">
-                            <button
-                                type="button"
-                                onClick={() => setModalOn(true)}
-                                className="rounded-full bg-[#8763DE] my-4 px-6 py-2 font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Contact Us
-                            </button>
-                        </div>
-                    </div> */}
 
                     <Footer />
 
