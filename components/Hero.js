@@ -8,7 +8,7 @@ export default function Hero() {
                     src={"/assets/bg/tree-pjpeg.jpg"}
                     height={2000}
                     width={2000}
-                    className=""
+                    className="w-full h-full"
                     alt="Tree"
                 />
 
