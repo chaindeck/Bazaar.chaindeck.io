@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="relative">
             <div>
                 <Image
-                    src={"/assets/bg/tree-cut.png"}
+                    src={"/assets/bg/tree-pjpeg.jpg"}
                     height={2000}
                     width={2000}
                     className=""
