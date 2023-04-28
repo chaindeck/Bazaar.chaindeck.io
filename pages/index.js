@@ -13,6 +13,7 @@ export default function Home() {
         <div>
             <Head>
                 <title>Data Marketplace</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <Layout>
