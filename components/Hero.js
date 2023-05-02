@@ -2,33 +2,29 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-20 items-center">
-                <div className="max-w-lg mx-auto order-2 md:order-1">
-                    <h3 className="text-center md:text-left text-4xl font-bold leading-tight">
-                        We{" "}
-                        <span className="text-transparent py-0.5 md:py-1 lg:py-2 bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
-                            Deploy, <br /> Monitor, Backup
-                        </span>{" "}
-                        Blockchain Nodes
-                    </h3>
+        <div className="relative">
+            <div>
+                <Image
+                    src={"/assets/bg/tree-pjpeg.jpg"}
+                    height={2000}
+                    width={2000}
+                    className="w-full h-full"
+                    alt="Tree"
+                />
 
-                    <div className="text-center md:text-left">
-                        <button
-                            type="button"
-                            className="rounded-full bg-[#8763DE] mt-8 px-8 py-3 font-semibold text-xl text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                            Get Started
-                        </button>
+                <div className="absolute flex flex-col items-center justify-end md:justify-start md:mt-8 xl:mt-12 md:items-start md:pl-8 xl:pl-12 h-full w-full top-0">
+                    <div className="flex flex-col justify-center">
+                        <Image
+                            src={"/assets/images/chaindeck-logo-header.svg"}
+                            height={100}
+                            width={200}
+                            className="mb-4 hidden md:block"
+                            alt="Chaindeck Logo"
+                        />
+                        <h3 className="text-center text-3xl font-bold leading-tight">
+                            Banyan Bazaar
+                        </h3>
                     </div>
-                </div>
-                <div className="mx-auto order-1 md:order-2 md:col-span-2">
-                    <Image
-                        src={"/assets/bg/tree-tr.png"}
-                        height={1200}
-                        width={1200}
-                        alt="Tree"
-                    />
                 </div>
             </div>
         </div>
